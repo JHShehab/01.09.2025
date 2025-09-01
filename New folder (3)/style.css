@@ -1,0 +1,31 @@
+.c1{
+    text-align: justify;
+    text-decoration: underline;
+    text-decoration-color: aqua;
+    text-transform: uppercase;
+    text-indent: 50px;
+    line-height: 1.2;
+    word-spacing: 2px;
+    text-shadow: 2px 2px 2px cyan;
+    background-color: beige;
+    color: cyan;
+}
+.c2{
+    background-color: aqua;
+}
+.c2 ul{
+      list-style-type: none;
+      display: flex;
+      gap: 20px;
+      justify-content: space-between;
+}
+
+.c2 ul li a{
+      text-decoration: none;
+}
+
+.c2 ul li a:hover{
+    background-color: antiquewhite;
+    display: inline-block;
+    color: rgb(209, 136, 40);
+}
