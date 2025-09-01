@@ -1,0 +1,178 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Website with Background</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-image: url('p1.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            min-height: 100vh;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 40px auto;
+        }
+        
+        header {
+            text-align: center;
+            padding: 40px 30px;
+            margin-bottom: 30px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        header h1 {
+            color: #2c3e50;
+            font-size: 2.8em;
+            margin-bottom: 10px;
+        }
+        
+        header p {
+            color: #7f8c8d;
+            font-size: 1.2em;
+        }
+        
+        .content-section {
+            display: flex;
+            gap: 25px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .card {
+            flex: 1;
+            min-width: 300px;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .card h2 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #3498db;
+        }
+        
+        .card p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+            color: #34495e;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+        
+        .btn:hover {
+            background-color: #2980b9;
+        }
+        .logo  {
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           gap: 30px;
+           font-size: 30px;
+           margin-top: 5px;
+           color: rgba(0, 0, 0, 0.9);
+
+        }
+        
+        footer {
+            text-align: center;
+            padding: 25px;
+            border-radius: 12px;
+            margin-top: 20px;
+            width: 100%;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        footer p {
+            color: #7f8c8d;
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.2em;
+            }
+            
+            .content-section {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome to Nature's Beauty</h1>
+            <p>A simple website with a stunning background image</p>
+        </header>
+        
+        <div class="content-section">
+            <div class="card">
+                <h2>About This Website</h2>
+                <p>This is a simple yet beautiful website template featuring a full-page background image. The content areas have a slight transparency to allow the background to subtly show through.</p>
+                <p>You can use this as a starting point for your own website by replacing the background image and modifying the content.</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+            
+            <div class="card">
+                <h2>Background Images</h2>
+                <p>Choosing the right background image is important for website aesthetics. Make sure your image is high quality and doesn't make text difficult to read.</p>
+                <p>This template uses a nature image from Unsplash, but you can replace it with any image you prefer by changing the URL in the CSS.</p>
+                <a href="#" class="btn">View Gallery</a>
+            </div>
+        </div>
+        
+        <div class="content-section">
+            <div class="card">
+                <h2>Customization Tips</h2>
+                <p>1. Change the background image URL to your own image</p>
+                <p>2. Adjust the content and colors to match your brand</p>
+                <p>3. Modify the card transparency with the rgba values</p>
+                <p>4. Add more sections as needed for your content</p>
+                <a href="#" class="btn">Get Started</a>
+            </div>
+        </div>
+        
+        <footer>
+            <div class="logo">
+            <p><i class="fa-brands fa-facebook"></i></p>
+            <p><i class="fa-brands fa-whatsapp"></i></p>
+            <p><i class="fa-brands fa-twitter"></i></p>
+            <p><i class="fa-brands fa-linkedin"></i></p>
+            </div>
+            <p><i><b>&copy; 2025 Shehab. All rights reserved.</b></i></p>
+        </footer>
+    </div>
+</body>
+</html>
